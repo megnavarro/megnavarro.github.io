@@ -1,0 +1,49 @@
+{
+    "projects": [
+      {
+        "id": 0,
+        "project_name": "Random Quotes",
+        "description": "This site generates random quotes and background colors to display on the webpage at set intervals and on the click of a button.",
+        "technologies": ["JavaScript", "HTML", "CSS"],
+        "live_link": "https://megnavarro.github.io/treehouseProject1",
+        "github_link": "https://github.com/megnavarro/treehouseProject1",
+        "image_urls": ["/static/images/p1_main.jpg", "/static/images/p1_landscape.jpg", "/static/images/p1_landscape_2.jpg", "/static/images/p1_landscape_3.jpg"]
+      },
+      {
+        "id": 1,
+        "project_name": "List Pagination and Filtering",
+        "description": "This site paginates and filters a list of student names using vanilla JavaScript.",
+        "technologies": ["JavaScript", "HTML", "CSS"],
+        "live_link": "https://megnavarro.github.io/treehouseProject2",
+        "github_link": "https://github.com/megnavarro/treehouseProject2",
+        "image_urls": ["/static/images/p2_main.jpg", "/static/images/p2_landscape.jpg" , "/static/images/p2_landscape_2.jpg", "/static/images/p2_landscape_3.jpg"]
+      },
+      {
+        "id": 2,
+        "project_name": "Interactive Form",
+        "description": "This site adds form functionality and validation using vanilla JavaScript.",
+        "technologies": ["JavaScript", "HTML", "CSS"],
+        "live_link": "https://megnavarro.github.io/treehouseProject3",
+        "github_link": "https://github.com/megnavarro/treehouseProject3",
+        "image_urls": ["/static/images/p3_main.jpg", "/static/images/p3_landscape.jpg", "/static/images/p3_landscape_2.jpg", "/static/images/p3_landscape_3.jpg"]
+      },
+      {
+        "id": 3,
+        "project_name": "OOP Game Show App",
+        "description": "This is a Guess-the-Phrase word game developed using Object Oriented JavaScript Programming.",
+        "technologies": ["JavaScript", "OOP", "HTML", "CSS"],
+        "live_link": "https://megnavarro.github.io/treehouseProject4",
+        "github_link": "https://github.com/megnavarro/treehouseProject4",
+        "image_urls": ["/static/images/p4_main.jpg", "/static/images/p4_landscape.jpg", "/static/images/p4_landscape_2.jpg", "/static/images/p4_landscape_3.jpg"]
+      },
+      {
+        "id": 4,
+        "project_name": "Public API Requests",
+        "description": "This site generates an employee directory using data from the Random User Generator API.",
+        "technologies": ["JavaScript", "API", "HTML", "CSS"],
+        "live_link": "https://megnavarro.github.io/treehouseProject5",
+        "github_link": "https://github.com/megnavarro/treehouseProject5",
+        "image_urls": ["/static/images/p5_main.jpg", "/static/images/p5_landscape.jpg", "/static/images/p5_landscape_2.jpg", "/static/images/p5_landscape_3.jpg"]
+      }
+    ]
+  }

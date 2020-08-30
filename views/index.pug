@@ -1,0 +1,20 @@
+extends layout.pug
+
+block content 
+  article.grid-container.portfolio-intro
+    div
+ 
+      h1 My Treehouse Portfolio
+
+      p.lead.text-light
+        | This portfolio was created using Express and Pug. It provides links to view all of the projects I have created as part of my Full-Stack JavaScript TechDegree from Treehouse. As you can see, with each project I have expanded my knowledge and enhanced my JavaScript skillset in preparation for the professional arena.  
+  article.grid-container.portfolio-index
+    
+    .grid-x.grid-margin-x.small-up-2.medium-up-2.large-up-3
+
+      each project in projects
+        .cell
+          a(href= `/project/${project.id}`)
+            img.thumbnail(src= `${project.image_urls[0]}`)
+            h5= project.project_name
+      
