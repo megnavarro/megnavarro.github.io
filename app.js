@@ -28,10 +28,13 @@ app.get('/about', (req, res) => {
 
 // Project Pages
 app.get('/project/:id', function(req, res, next) {
-    const projectId = req.params.id;
-    const project = projects.find( ({ id }) => id === +projectId );
-    
+  const projectId = req.params.id;
+  const project = projects[projectId];
+  if (project) {  
     res.render('project', { project });
+  } else {
+    next();
+  }
   });
 
 /*
@@ -43,12 +46,14 @@ app.use((req, res, next) => {
     next(err);
   });
   
-  app.use((err, req, res, next) => {
-    res.locals.error = err;
-    res.status(err.status);
-    console.error(`${err.status}: ${err.message}`);
-    res.render("error", {err});
-  });
+app.use((err, req, res, next) => {
+  if (err.status === 404) {
+    res.status(404).render('error', {err});
+  } else {
+    err.message = err.message || 'Oops! It looks like something went wrong on the server.';
+    res.status(err.status || 500).render('error', {err});
+  }
+});
 
 /*
  * Start Server
